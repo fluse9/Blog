@@ -7,8 +7,8 @@ function Hero() {
     return (
         <div className='hero-container'>
             <video src='/videos/video-1.mp4' autoPlay loop muted />
-            <h1>LEARN TO CODE</h1>
-            <p>Start honing your skills in React, Node.js, & HTML/CSS today.</p>
+            <h1>BRING YOUR BRAND TO LIFE</h1>
+            <p>It all starts with a stunning website and killer user experience.</p>
             <div className='hero-btns'>
                 <Button
                     className='btns'
