@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import $ from 'jquery';
 import { Link } from 'react-router-dom';
 import { Button } from './Button.js';
 import './Navbar.css';
@@ -24,6 +25,10 @@ function Navbar() {
 
     window.addEventListener('resize', showButton);
 
+    $(window).scroll(function() {
+        var alpha = window.pageYOffset / 400.0;
+        $('.navbar').css('background-color', 'rgba(0, 0, 0, ' + alpha + ')');
+    });
 
     return (
         <>
@@ -40,11 +45,11 @@ function Navbar() {
                             <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                                 Services
                             </Link>
-                            <Link to='/blog' className='nav-links' onClick={closeMobileMenu}>
-                                Blog
-                            </Link>
                             <Link to='/portfolio' className='nav-links' onClick={closeMobileMenu}>
                                 Portfolio
+                            </Link>
+                            <Link to='/blog' className='nav-links' onClick={closeMobileMenu}>
+                                Blog
                             </Link>
                         </li>
                         <li>
@@ -57,7 +62,7 @@ function Navbar() {
                             </Link>
                         </li>
                       </ul>
-                      {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                      {button && <Button buttonStyle='btn--outline' buttonSize='btn--small'>SIGN UP</Button>}
                 </div>
             </nav>
         </>

@@ -1,6 +1,5 @@
 .navbar {
-    background: transparent;
-    height: 64px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,14 +7,14 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    margin-top: -64px;
+    margin-top: -48px;
 }
 
 .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 64px;
+    height: 48px;
     max-width: 1500px;
 }
 
@@ -25,7 +24,7 @@
     margin-left: 16px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 28px;
     display: flex;
     align-items: center;
 }
@@ -37,13 +36,13 @@
     list-style: none;
     text-align: center;
     width: 60vw;
-    line-height: 64px;
+    line-height: 48px;
     justify-content: end;
     margin-right: 2rem;
 }
 
 .nav-item {
-    height: 64px;
+    height: 48px;
 }
 
 .nav-links {
@@ -53,7 +52,7 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin-top: 0.5rem;
-    height: 32px;
+    height: 28px;
 }
 
 .nav-links:hover {

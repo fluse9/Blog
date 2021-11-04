@@ -31,12 +31,17 @@
     font-size: 18px;
 }
 
+.btn--small {
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
 .btn--large {
     padding: 12px 24px;
     font-size: 20px;
 }
 
-.btn--large:hover, .btn--medium:hover {
+.btn--large:hover, .btn--medium:hover, .btn--small:hover {
     transition: all 0.5s ease-out;
     background: var(--primary);
     box-shadow: 0 0 2px var(--primary);

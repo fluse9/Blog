@@ -17,9 +17,9 @@ video {
 
 .hero-container > h1 {
     color: #fff;
-    font-size: 96px;
+    font-size: 84px;
     margin: 0 !important;
-    margin-top: -96px;
+    margin-top: -84px;
 }
 
 .hero-container > p {
@@ -36,6 +36,20 @@ video {
     margin: 8px;
 }
 
-.fa-play-circle {
-    margin-left: 4px;
+.hero-arrs {
+    position: absolute;
+    margin-top: calc(80vh);
+}
+
+.hero-arrs .arr {
+    margin: 8px;
+    animation-name: slidevertical;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+}
+
+@keyframes slidevertical {
+    from {transform: translateY(0px);}
+    to {transform: translateY(4px);}
 }
