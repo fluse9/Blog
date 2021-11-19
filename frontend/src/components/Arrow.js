@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Arrow.css';
 
-const STYLES = ['arr--primary', 'arr--outline', 'arr--test'];
+const STYLES = ['arr--primary', 'arr--secondary', 'arr--outline', 'arr--test'];
 
 const SIZES = ['arr--medium', 'arr--large'];
 

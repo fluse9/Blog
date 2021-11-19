@@ -18,6 +18,13 @@
     transition: all 0.5s ease-out;
 }
 
+.arr--secondary {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 2px solid var(--secondary);
+    transition: all 0.5s ease-out;
+}
+
 .arr--outline {
     background-color: transparent;
     color: var(--primary);
@@ -36,9 +43,16 @@
     font-size: 20px;
 }
 
-.arr--large:hover, .arr--medium:hover {
+.arr--primary:hover, .arr--outline:hover {
     transition: all 0.5s ease-out;
     background: var(--primary);
     box-shadow: 0 0 2px var(--primary);
-    color: #242424;
+    color: var(--secondary);
+}
+
+.arr--secondary:hover {
+    transition: all 0.5s ease-out;
+    background: var(--primary);
+    box-shadow: 0 0 2px var(--secondary);
+    color: var(--secondary);
 }

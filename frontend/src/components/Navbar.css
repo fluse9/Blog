@@ -1,5 +1,5 @@
 .navbar {
-    height: 48px;
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,15 +7,15 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    margin-top: -48px;
+    margin-top: -64px;
 }
 
 .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 48px;
-    max-width: 1500px;
+    height: 64px;
+    max-width: 1600px;
 }
 
 .navbar-logo {
@@ -36,13 +36,13 @@
     list-style: none;
     text-align: center;
     width: 60vw;
-    line-height: 48px;
+    line-height: 64px;
     justify-content: end;
     margin-right: 2rem;
 }
 
 .nav-item {
-    height: 48px;
+    height: 64px;
 }
 
 .nav-links {
@@ -50,14 +50,13 @@
     display: inline;
     align-items: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     margin-top: 0.5rem;
-    height: 28px;
+    height: 64px;
 }
 
 .nav-links:hover {
-    border-bottom: 1px solid #fff;
-    transition: all 0.5s ease-out;
+    border-bottom: 3px solid #fff;
 }
 
 .fa-bars {

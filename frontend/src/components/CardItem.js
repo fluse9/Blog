@@ -1,8 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Cards.css';
+import $ from 'jquery';
 
 function CardItem(props) {
+    $(document).ready(function() {
+        $('.cards__item').mouseover(function() {
+            $(this).find('.cards__item__img').css('transform', 'scale(1.1)');
+        });
+        $('.cards').mouseout(function() {
+            $(this).find('.cards__item__img').css('transform', 'scale(1)');
+        });
+    });
+
     return (
         <>
             <li className='cards__item'>

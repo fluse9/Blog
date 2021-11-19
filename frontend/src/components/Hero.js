@@ -8,11 +8,11 @@ import './Hero.css';
 
 function Hero() {
     return (
-        <div className='hero-container'>
+        <div className='hero__container'>
             <video src='/videos/video-1.mp4' autoPlay loop muted />
             <h1>BRING YOUR BRAND TO LIFE</h1>
             <p>It all starts with a stunning website and killer user experience.</p>
-            <div className='hero-btns'>
+            <div className='hero__btns'>
                 <Button
                     className='btn'
                     buttonStyle='btn--outline'
@@ -24,17 +24,15 @@ function Hero() {
                     className='btn'
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
-                    onClick={console.log('test')}
                 >
                     WATCH TRAILER <i className='far fa-play-circle' />
                 </Button>
             </div>
-            <div className='hero-arrs'>
+            <div className='hero__arrs'>
                 <Arrow
                         className='arr'
                         buttonStyle='arr--primary'
                         buttonSize='arr--large'
-                        onClick={console.log('test')}
                     >
                         <FontAwesomeIcon icon={faAngleDoubleDown} />
                 </Arrow>

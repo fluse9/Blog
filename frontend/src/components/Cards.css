@@ -3,16 +3,19 @@
     background: #fff;
 }
 
-h1 {
-    text-align: center;
-}
+    .cards > h1 {
+        color: #242424;
+        font-size: 48px;
+        margin: 8px;
+        text-align: center;
+    }
 
 .cards__container {
     display: flex;
     flex-flow: column;
     align-items: center;
     max-width: 1600px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -46,8 +49,8 @@ h1 {
 .cards__item__link {
     display: flex;
     flex-flow: column;
-    width: 320px;
-    height: 440px;
+    width: 392px;
+    height: 540px;
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
     -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
     filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -106,7 +109,6 @@ h1 {
 }
 
 .cards__item__img:hover {
-    transform: scale(1.1);
     transition: all 0.25s linear;
 }
 
